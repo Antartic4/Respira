@@ -58,7 +58,7 @@ const Dashboard: NextPage = () => {
               </a>
               <div className="p-6">
                 <h5 className="mb-2 text-2xl font-medium text-gray-900">
-                  ¿Puede la meditación guiada ayudar con la ansiedad?
+                  Qué es la Meditación?
                 </h5>
                 <p className="mb-3 text-base text-gray-700 indent-5">
                   La mejor manera de explicar el ruido rosa es un ruido
