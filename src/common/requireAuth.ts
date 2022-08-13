@@ -21,4 +21,4 @@ export const requireAuth =
     }
 
     return await func(ctx);
-  };
+  }; 

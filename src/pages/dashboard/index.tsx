@@ -1,5 +1,7 @@
 import type { NextPage } from "next";
 import { useSession, signOut } from "next-auth/react";
+import { stringify } from "querystring";
+import Layout from "../../common/components/Layout";
 
 import { requireAuth } from "../../common/requireAuth";
 
@@ -11,32 +13,41 @@ const Dashboard: NextPage = () => {
   const { data } = useSession();
 
   return (
-    <div className="hero min-h-screen bg-base-200">
-      <div className="hero-content">
-        <div className="max-w-lg">
-          <h1 className="text-5xl text-center font-bold leading-snug text-gray-400">
-            You are logged in!
-          </h1>
-          <p className="my-4 text-center leading-loose">
-            You are allowed to visit this page because you have a session,
-            otherwise you would be redirected to the login page.
-          </p>
-          <div className="my-4 bg-gray-700 rounded-lg p-4">
-            <pre>
-              <code>{JSON.stringify(data, null, 2)}</code>
-            </pre>
-          </div>
-          <div className="text-center">
-            <button
-              className="btn btn-secondary"
-              onClick={() => signOut({ callbackUrl: "/" })}
-            >
-              Logout
-            </button>
+    <Layout>
+      <div className="bg-secondary">
+        <h3 className="text-2xl font-bold leading-snug text-center text-black">
+          Bienvenido, {data?.user?.email}
+        </h3>
+      </div>
+
+      <div className="min-h-screen bg-purple-200 hero">
+        <div className="hero-content">
+          <div className="max-w-lg">
+            <h1 className="text-5xl font-bold leading-snug text-center text-black">
+              You are logged in!
+            </h1>
+            <h1>Bienvenidos {data?.user?.email}</h1>
+            <p className="my-4 leading-loose text-center">
+              You are allowed to visit this page because you have a session,
+              otherwise you would be redirected to the login page.
+            </p>
+            <div className="p-4 my-4 bg-white rounded-lg">
+              <pre>
+                <code>{JSON.stringify(data, null, 2)}</code>
+              </pre>
+            </div>
+            <div className="text-center">
+              <button
+                className="btn btn-secondary"
+                onClick={() => signOut({ callbackUrl: "/" })}
+              >
+                Logout
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 
