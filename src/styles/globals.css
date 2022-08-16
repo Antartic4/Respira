@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-image: linear-gradient(120deg, #852292 0%, #f0a2f7 100%);
-  height: 100vh;
-}
-
 h1 {
   font-size: 2.2rem;
   margin-top: 80px;
@@ -17,6 +12,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   max-width: 600px;
+  background: rgb(196 181 253);
   margin: 1vw auto;
   position: relative;
   text-align: center;
@@ -107,7 +103,6 @@ h1 {
 
 .title span {
   display: block;
-  font-family: Helvetica, Arial, Sans-Serif;
   font-size: 0.6rem;
   letter-spacing: 0.1rem;
   margin-top: 8px;
@@ -142,4 +137,117 @@ h1 {
   margin: 30%;
   transform: rotate(45deg);
   width: 40%;
+}
+
+html {
+  background-color: rgb(196 181 253);
+}
+
+body {
+  color: #272727;
+  background: rgb(196 181 253);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #b9b0b0 40%, #fff6f6 100%);
+}
+
+.card_content1 {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #975942 40%, #ffc39e 100%);
+}
+
+.card_content2 {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #ef8d9c 40%, #fcddd2 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
 }

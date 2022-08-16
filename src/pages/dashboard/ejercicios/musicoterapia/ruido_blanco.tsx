@@ -15,19 +15,18 @@ const Dashboard: NextPage = () => {
 
   return (
     <Layout>
-      <>
-        <br />
+      <div className="bg-violet-300">
         <br />
         <h1 className="text-4xl font-bold text-white">Ruido de Color</h1> <br />
         <h1 className="text-3xl font-bold text-white">Musica</h1>
         <br />
         <h1 className="text-2xl font-bold text-white">Ruido Blanco</h1>
         <br />
-        <div className="bg-purple-200">
+        <div className="bg-violet-300">
           <br />
           {/* div de ruido blanco */}
           <div className="flex justify-center">
-            <div className="items-center object-fill w-4/6 bg-white rounded-lg shadow-lg">
+            <div className="items-center object-fill w-4/6 bg-white shadow-lg rounded-2xl">
               <br />
               <a className="justify-center" href="#!">
                 <img
@@ -176,7 +175,7 @@ const Dashboard: NextPage = () => {
           <br />
           <br />
         </div>
-      </>
+      </div>
     </Layout>
   );
 };

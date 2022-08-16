@@ -15,18 +15,18 @@ const Navbar = () => {
           type="text/css"
         />
         <script src="https://cdn.tailwindcss.com"></script>
-        <div className="max-w-6xl mx-auto px-3">
+        <div className="max-w-6xl px-3 mx-auto">
           <div className="flex justify-between">
             <div className="flex">
               {/* <!-- logo --> */}
               <div>
                 <a
                   href="#"
-                  className="flex items-center py-5 px-2 text-gray-700"
+                  className="flex items-center px-2 py-5 text-gray-700"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8"
+                    className="w-8 h-8"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -43,40 +43,40 @@ const Navbar = () => {
                 </a>
               </div>
               {/* <!-- primary nav --> */}
-              <div className="hidden md:flex items-center space-x-1">
+              <div className="items-center hidden space-x-1 md:flex">
                 <a
-                  href="/directorio"
-                  className="py-2 px-5 text-white hover:text-gray-900"
+                  href="/dashboard/directorio"
+                  className="px-5 py-2 text-white hover:text-gray-900"
                 >
                   Directorio
                 </a>
                 <a
-                  href="/ejercicios"
-                  className="py-2 px-5 text-white hover:text-gray-900"
+                  href="/dashboard/ejercicios"
+                  className="px-5 py-2 text-white hover:text-gray-900"
                 >
                   Actividades
                 </a>
               </div>
             </div>
             {/* <!-- secondary nav --> */}
-            <div className="hidden md:flex items-center space-x-1">
+            <div className="items-center hidden space-x-1 md:flex">
               <a
                 href="/dashboard"
-                className="py-5 px-3 text-white hover:text-gray-900"
+                className="px-3 py-5 text-white hover:text-gray-900"
               >
                 Login
               </a>
               <a
                 href="/sign-up"
-                className="py-2 px-3 bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 rounded transition duration-300"
+                className="px-3 py-2 text-yellow-900 transition duration-300 bg-yellow-400 rounded hover:bg-yellow-300 hover:text-yellow-800"
               >
                 Registrarse
               </a>
             </div>
             {/* <!--       mobile button does here --> */}
-            <div className="md:hidden flex items-center">
+            <div className="flex items-center md:hidden">
               <button
-                className="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md"
+                className="inline-flex items-center justify-center p-2 rounded-md mobile-menu-button"
                 onClick={handleClick}
                 type="button"
                 aria-controls="mobile-menu"
@@ -84,7 +84,7 @@ const Navbar = () => {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
+                  className="w-6 h-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -105,14 +105,14 @@ const Navbar = () => {
             active ? "" : "hidden"
           } w-full lg:hidden lg:flex-grow lg:w-auto`}
         >
-          <div className="lg:hidden lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
-            <Link href="/directorio">
-              <a className="lg:hidden w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:text-white ">
+          <div className="flex flex-col items-start w-full lg:hidden lg:ml-auto lg:w-auto lg:items-center lg:h-auto">
+            <Link href="/dashboard/directorio">
+              <a className="items-center justify-center w-full px-3 py-2 font-bold text-white rounded lg:hidden hover:text-white ">
                 Directorio
               </a>
             </Link>
-            <Link href="/ejercicios">
-              <a className="lg:hidden w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:text-white ">
+            <Link href="dashboard/ejercicios">
+              <a className="items-center justify-center w-full px-3 py-2 font-bold text-white rounded lg:hidden hover:text-white ">
                 Actividades
               </a>
             </Link>

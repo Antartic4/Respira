@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import { useSession, signOut } from "next-auth/react";
+import Link from "next/link";
 import { stringify } from "querystring";
 import Layout from "../../common/components/Layout";
 
@@ -22,6 +23,11 @@ const Dashboard: NextPage = () => {
 
       <div className="min-h-screen bg-purple-200 hero">
         <div className="hero-content">
+          <div className="text-center">
+            <Link href="/dashboard/ejercicios">
+              <button className="btn btn-secondary">Ejercicios</button>
+            </Link>
+          </div>
           <div className="max-w-lg">
             <h1 className="text-5xl font-bold leading-snug text-center text-black">
               You are logged in!
