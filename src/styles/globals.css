@@ -321,3 +321,127 @@ elbody {
 elp {
   padding: 0.5rem;
 }
+
+.meditation-wrapper {
+  margin: 7rem;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.in-out {
+  animation: out 4s cubic-bezier(0.39, 0.575, 0.565, 1) alternate infinite;
+}
+.circle-1 {
+  border-radius: 100%;
+  width: 70%;
+  background: #00ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 60px 40px #00ffff;
+}
+.circle-2 {
+  border-radius: 50%;
+  width: 60%;
+  height: 60%;
+  background: rgba(122, 255, 255, 0.2);
+  box-shadow: 1px 1px 80px 20px #00ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle-3 {
+  border-radius: 50%;
+  width: 15%;
+  height: 15%;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 0px 70px 35px #ffff;
+}
+
+@keyframes out {
+  100% {
+    transform: scale(1.5, 1.5);
+  }
+}
+
+body {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  color: white;
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.7;
+}
+a:hover {
+  opacity: 1;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 300px;
+  height: 100vh;
+}
+.align-wrap {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+.align {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.group {
+  height: 55px;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clock {
+  width: 300px;
+  height: 300px;
+  vertical-align: middle;
+  display: table-cell;
+}
+.timer {
+  padding: 110px 0;
+  font-weight: 400;
+  font-size: 4em;
+}
+.button {
+  width: 100px;
+  height: 45px;
+  border: solid thin white;
+  text-transform: uppercase;
+  background: transparent;
+  color: white;
+}
+.button:hover {
+  background: white;
+  color: #f44336;
+}
+.button:focus {
+  outline: none;
+}

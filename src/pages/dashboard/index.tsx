@@ -15,6 +15,16 @@ const Dashboard: NextPage = () => {
 
   return (
     <Layout>
+      <br />
+      <div className="flex">
+        <div className="w-1/6 "></div>
+        <div className="w-2/3 text-center bg-white rounded-xl">
+          <div>Bienvendios, </div>
+          <div className="font-bold">{data?.user?.email}</div>
+        </div>
+
+        <div className="w-1/6 "></div>
+      </div>
       <div className="flex">
         <div className="w-1/6"></div>
         <div className="w-1/6">

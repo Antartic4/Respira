@@ -1,7 +1,11 @@
 import React, { Fragment, useState } from "react";
 import Link from "next/link";
+import { useSession, signOut } from "next-auth/react";
+import type { NextPage } from "next";
+import { requireAuth } from "../../common/requireAuth";
 
 const Navbar = () => {
+  const { data } = useSession();
   const [active, setActive] = useState(false);
   const handleClick = () => {
     setActive(!active);
@@ -62,13 +66,8 @@ const Navbar = () => {
               </div>
             </div>
             {/* <!-- secondary nav --> */}
-            <div className="items-center hidden px-4 space-x-1 md:flex">
-              <a
-                href="/dashboard"
-                className="px-3 py-2 font-bold text-yellow-900 transition duration-300 bg-yellow-400 rounded hover:bg-yellow-300 hover:text-yellow-800"
-              >
-                Inicio
-              </a>
+            <div className="items-center hidden px-4 space-x-1 bg-yellow-400 md:flex">
+              {data?.user?.email}
             </div>
             {/* <!--       mobile button does here --> */}
             <div className="flex items-center md:hidden">
@@ -111,6 +110,16 @@ const Navbar = () => {
             <Link href="dashboard/ejercicios">
               <a className="items-center justify-center w-full px-3 py-2 font-bold text-white rounded lg:hidden hover:text-white ">
                 Actividades
+              </a>
+            </Link>
+            <Link href="dashboard/news">
+              <a className="items-center justify-center w-full px-3 py-2 font-bold text-white rounded lg:hidden hover:text-white ">
+                Noticias
+              </a>
+            </Link>
+            <Link href="dashboard/aboutus">
+              <a className="items-center justify-center w-full px-3 py-2 font-bold text-white rounded lg:hidden hover:text-white ">
+                Nosotros
               </a>
             </Link>
           </div>

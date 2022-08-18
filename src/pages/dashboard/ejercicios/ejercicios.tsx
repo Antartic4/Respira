@@ -16,19 +16,19 @@ const Dashboard: NextPage = () => {
     <Layout>
       <div className="flex flex-col min-h-screen text-center">
         <div className="h-24 p-6 bg-violet-300">
-          <h1 className="text-3xl font-bold text-white">Ruidos de Color</h1>
+          <h1 className="text-3xl font-bold text-white">Ejercicios</h1>
         </div>
         {/* Contenido */}
         <div className="items-center pb-10 justify-evenly xl:flex 2xl:flex lg:flex-grow sm:flex-grow md:flex-grow bg-violet-300">
-          {/* div 1 Rudio Rosa*/}
-          <div className="w-screen max-w-sm px-2 pt-2 pr-2 mx-auto border border-gray-500 shadow-md basis-1/2 bg-gradient-to-r to-stone-200 from-pink-300 rounded-2xl dark:bg-gray-800 dark:border-gray-700 sm:w-screen">
+          {/* div 1 */}
+          <div className="max-w-sm px-2 pt-2 pr-2 mx-auto border border-gray-500 shadow-md bg-gradient-to-r to-stone-200 from-zinc-400 rounded-2xl dark:bg-gray-800 dark:border-gray-700">
             <picture>
               <source
-                srcSet="https://i.pinimg.com/originals/eb/c1/d1/ebc1d11d1cf5437af2a2f6c5300dc138.jpg"
+                srcSet="https://i.ibb.co/wdXqhgW/Work-time-pana-1.png"
                 type="image/webp"
               />
               <img
-                src="https://i.pinimg.com/originals/eb/c1/d1/ebc1d11d1cf5437af2a2f6c5300dc138.jpg"
+                src="https://i.ibb.co/wdXqhgW/Work-time-pana-1.png"
                 className="rounded-2xl"
                 alt="title"
               />
@@ -68,11 +68,11 @@ const Dashboard: NextPage = () => {
           <div className="max-w-sm px-2 pt-2 pr-2 mx-auto border border-gray-500 shadow-md bg-gradient-to-r to-stone-200 from-zinc-400 rounded-2xl dark:bg-gray-800 dark:border-gray-700">
             <picture>
               <source
-                srcSet="https://i.pinimg.com/originals/69/50/85/695085dd63269385fde8e1ef34fae700.jpg"
+                srcSet="https://i.ibb.co/MSkVKd6/Loading-amico.png"
                 type="image/webp"
               />
               <img
-                src="https://i.pinimg.com/originals/69/50/85/695085dd63269385fde8e1ef34fae700.jpg"
+                src="https://i.ibb.co/MSkVKd6/Loading-amico.png"
                 className="rounded-2xl"
                 alt="title"
               />
@@ -110,14 +110,14 @@ const Dashboard: NextPage = () => {
           </div>
           <br />
           {/* div 3 */}
-          <div className="max-w-sm px-2 pt-2 pr-2 mx-auto border border-gray-500 shadow-md bg-gradient-to-r to-stone-200 from-yellow-700 rounded-2xl dark:bg-gray-800 dark:border-gray-700">
+          <div className="max-w-sm px-2 pt-2 pr-2 mx-auto border border-gray-500 shadow-md bg-gradient-to-r to-stone-200 from-zinc-400 rounded-2xl dark:bg-gray-800 dark:border-gray-700">
             <picture>
               <source
-                srcSet="https://i.ibb.co/zFGy9sG/3.png"
+                srcSet="https://i.ibb.co/K5K2ywq/Mindfulness-pana.png"
                 type="image/webp"
               />
               <img
-                src="https://i.ibb.co/zFGy9sG/3.png"
+                src="https://i.ibb.co/K5K2ywq/Mindfulness-pana.png"
                 className="rounded-2xl"
                 alt="title"
               />
@@ -159,14 +159,14 @@ const Dashboard: NextPage = () => {
 
         <div className="items-center pb-10 justify-evenly xl:flex 2xl:flex lg:flex sm:flex-grow md:flex-grow bg-violet-300">
           {/* div 4*/}
-          <div className="w-screen max-w-sm px-2 pt-2 pr-2 mx-auto border border-gray-500 shadow-md basis-1/2 bg-gradient-to-r to-stone-200 from-pink-300 rounded-2xl dark:bg-gray-800 dark:border-gray-700 sm:w-screen">
+          <div className="max-w-sm px-2 pt-2 pr-2 mx-auto border border-gray-500 shadow-md bg-gradient-to-r to-stone-200 from-zinc-400 rounded-2xl dark:bg-gray-800 dark:border-gray-700">
             <picture>
               <source
-                srcSet="https://i.pinimg.com/originals/eb/c1/d1/ebc1d11d1cf5437af2a2f6c5300dc138.jpg"
+                srcSet="https://i.ibb.co/X7y0shm/Walking-around-pana.png"
                 type="image/webp"
               />
               <img
-                src="https://i.pinimg.com/originals/eb/c1/d1/ebc1d11d1cf5437af2a2f6c5300dc138.jpg"
+                src="https://i.ibb.co/X7y0shm/Walking-around-pana.png"
                 className="rounded-2xl"
                 alt="title"
               />

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style2.css">
+  </head>
+  <body>
+
+    <div class="meditation-wrapper">
+	<div class="circle-1">
+			<div class="circle-2">
+				<div class="circle-3"></div>
+		</div>
+	</div>
+</div>
+<p>1: Inhale por la nariz durante 4 segundos (mientras se expande la luz).</p>
+<p>2: Aguante por 4 segundos.</p>
+<p>3: Exhale todo el aire retenido por la boca durante 4 segundos (siga la contracción de la luz).</p>
+<p>4: Aguante por 4 segundos.</p>
+<p>5: Siga el ritmo por 5 minutos o hasta que se sienta relajado.</p>
+
+  </body>
+  <script type="text/javascript">
+    const meditationAnimationClass = "meditation-wrapper in-out";
+    const meditationOrb = document.querySelector(".meditation-wrapper");
+    let pauseState = false;
+    meditationOrb.className = meditationAnimationClass;
+
+    setInterval(function(){
+    	if(pauseState) {
+    		pauseState = false;
+    		meditationOrb.style.animationPlayState = "running";
+    	} else {
+    		pauseState = true;
+    		meditationOrb.style.animationPlayState = "paused";
+    	}
+    }, 4000);
+
+    // setTimeout(function(){
+    // 	meditationOrb.style.animationPlayState = "paused";
+    // }, 4000);
+
+
+  </script>
+</html>

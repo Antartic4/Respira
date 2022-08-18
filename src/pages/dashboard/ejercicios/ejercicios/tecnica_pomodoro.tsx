@@ -26,7 +26,7 @@ const Dashboard: NextPage = () => {
               <br />
               <img
                 className="ml-auto mr-auto rounded-2xl rounded-w-lg"
-                src="https://i.pinimg.com/originals/29/67/18/296718947338aa177edea4f68ca3d84f.jpg"
+                src="https://i.ibb.co/wdXqhgW/Work-time-pana-1.png"
                 width="400px"
                 height="300px"
                 alt=""
@@ -90,6 +90,12 @@ const Dashboard: NextPage = () => {
                   Fuente!
                 </a>
                 <br />
+                <br />
+                <a href="/dashboard/ejercicios/ejercicios/tecnica_pomodoro/herramienta_pomodoro">
+                  <div className="w-1/2 mx-auto mb-10 text-2xl text-center text-white rounded-xl bg-violet-600">
+                    Click para ejercicio
+                  </div>
+                </a>
               </div>
             </div>
           </div>
