@@ -162,6 +162,18 @@ h1 {
   text-align: center;
 }
 
+carta-blanca {
+  background: linear-gradient(to bottom left, #b9b0b0 40%, #fff6f6 100%);
+}
+
+carta-marron {
+  background: linear-gradient(to bottom left, #975942 40%, #ffc39e 100%);
+}
+
+carta-rosa {
+  background: linear-gradient(to bottom left, #ef8d9c 40%, #fcddd2 100%);
+}
+
 img {
   height: auto;
   max-width: 100%;
@@ -250,4 +262,62 @@ img {
   line-height: 1.5;
   margin-bottom: 1.25rem;
   font-weight: 400;
+}
+
+.meditation-wrapper {
+  margin: 7rem;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.in-out {
+  animation: out 4s cubic-bezier(0.39, 0.575, 0.565, 1) alternate infinite;
+}
+.circle-1 {
+  border-radius: 100%;
+  width: 70%;
+  height: 70%;
+  background: #00ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 60px 40px #00ffff;
+}
+.circle-2 {
+  border-radius: 50%;
+  width: 60%;
+  height: 60%;
+  background: rgba(122, 255, 255, 0.2);
+  box-shadow: 1px 1px 80px 20px #00ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle-3 {
+  border-radius: 50%;
+  width: 15%;
+  height: 15%;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 0px 70px 35px #ffff;
+}
+
+@keyframes out {
+  100% {
+    transform: scale(1.5, 1.5);
+  }
+}
+
+elbody {
+  background: #0e011c;
+  color: #f2f2f2;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+elp {
+  padding: 0.5rem;
 }

@@ -57,7 +57,7 @@ const Dashboard: NextPage = () => {
             <div className="product">
               <div className="effect-1"></div>
               <div className="effect-2"></div>
-              <Link href="/dashboard/ejercicios/meditacion">
+              <Link href="/dashboard/ejercicios/ejercicios">
                 <div className="content">
                   <div className="meditation"></div>
                 </div>

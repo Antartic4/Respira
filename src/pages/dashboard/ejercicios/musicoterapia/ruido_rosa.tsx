@@ -16,33 +16,33 @@ const Dashboard: NextPage = () => {
   return (
     <Layout>
       <>
+        <br />
         <div className="bg-violet-300">
           <h1 className="text-4xl font-bold text-white">Ruido de Color</h1>{" "}
           <br />
-          <h1 className="text-2xl font-bold text-white">Musica</h1>
+          <h1 className="text-2xl font-bold text-white">Música</h1>
           <br />
           <h1 className="text-2xl font-bold text-white">Ruido Rosa</h1>
           <br />
-          <div className="bg-violet-300">
+          <div className="flex-wrap bg-violet-300">
             <br />
             {/* div de ruido rosa */}
-            <div className="flex justify-center">
-              <div className="items-center object-fill w-4/6 bg-white rounded-lg shadow-lg">
+            <div className="flex flex-col items-center justify-center">
+              <div className="items-center object-fill bg-white rounded-lg shadow-lg sm:w-4/6">
                 <br />
-                <a className="justify-center" href="#!">
-                  <img
-                    className="justify-center mx-auto rounded-2xl rounded-w-lg"
-                    src="https://i.ibb.co/3BPXGKV/2.png"
-                    width="300px"
-                    height="300px"
-                    alt=""
-                  />
-                </a>
+                <img
+                  className="ml-auto mr-auto rounded-2xl rounded-w-lg"
+                  src="https://i.ibb.co/3BPXGKV/2.png"
+                  width="400px"
+                  height="300px"
+                  alt=""
+                />
                 <div className="p-6">
                   <h5 className="mb-2 text-2xl font-medium text-gray-900">
                     ¿Qué es el ruido rosa?
                   </h5>
-                  <p className="mb-3 text-base text-gray-700 indent-5">
+                  <br />
+                  <p className="mb-5 ml-5 text-base text-gray-700 indent-10">
                     La mejor manera de explicar el ruido rosa es un ruido
                     ambiental que a menudo se reproduce de fondo para ayudar a
                     concentrarse y ahogar otros sonidos que pueden interferir
@@ -54,7 +54,7 @@ const Dashboard: NextPage = () => {
                     susurro del viento entre los árboles o las olas en la
                     playa”.
                   </p>
-                  <p className="mb-3 text-base text-gray-700 indent-5">
+                  <p className="mb-5 ml-5 text-base text-gray-700 indent-10">
                     Para muchas personas, esto es mucho más agradable de
                     escuchar durante un período de tiempo prolongado. El cuerpo
                     humano es increíble por muchas razones, pero seguramente una
@@ -71,7 +71,7 @@ const Dashboard: NextPage = () => {
                   <h5 className="mb-2 text-2xl font-medium text-gray-900">
                     Cómo el ruido rosa te ayuda a dormir
                   </h5>
-                  <p className="mb-3 text-base text-gray-700 indent-5">
+                  <p className="mb-5 ml-5 text-base text-gray-700 indent-10">
                     La razón por la que el ruido rosa es tan ideal para
                     ayudarnos a dormir es que funciona para “enmascarar” otros
                     sonidos. Cuando dormimos en silencio, las ondas sonoras del
@@ -79,7 +79,7 @@ const Dashboard: NextPage = () => {
                     despiertan debido al "cambio de sonido o en el ruido", y no
                     necesariamente al sonido en sí.
                   </p>
-                  <p className="mb-3 text-base text-gray-700 indent-5">
+                  <p className="mb-3 ml-5 text-base text-gray-700 indent-10">
                     El ruido rosa es efectivo porque crea un sonido de fondo
                     constante, lo que hace que un ruido fuerte y repentino no
                     sea tan discordante para nuestros cerebros dormidos. Como
@@ -89,7 +89,7 @@ const Dashboard: NextPage = () => {
                     convierte en un claro ganador cuando se trata de enmascarar
                     el ruido.
                   </p>
-                  <p className="mb-3 text-base text-gray-700 indent-5">
+                  <p className="mb-3 ml-5 text-base text-gray-700 indent-10">
                     En "The Many Colors of Sound", Meghan Neal describe el ruido
                     rosa como un "patrón" que se encuentra en algún lugar entre
                     "pura aleatoriedad y movimiento correlacionado". El hecho de
@@ -112,11 +112,9 @@ const Dashboard: NextPage = () => {
                     />
                     <br />
                   </div>
-                  <div className="relative w-full justify-center embed-responsive embed-responsive-21by9 top-padding:42.857143%">
+                  <div className="flex relative w-full justify-center embed-responsive embed-responsive-21by9 top-padding:42.857143%">
                     <iframe
-                      width="275px"
-                      height="275px"
-                      className="justify-center mx-auto rounded-2xl rounded-w-lg"
+                      className="justify-center fill rounded-2xl rounded-w-lg"
                       src="https://www.youtube.com/embed/nYpjjLGSUNA"
                       title="Pink Noise Ambient Sound For Sleep for 5 hrs   Ruido Rosa sonido ambiental para dormir"
                       frameBorder="0"
@@ -127,10 +125,11 @@ const Dashboard: NextPage = () => {
                 </div>
               </div>
             </div>
-            <br />
-            <br />
           </div>
         </div>
+        <br />
+        <br />
+        <br />
       </>
     </Layout>
   );

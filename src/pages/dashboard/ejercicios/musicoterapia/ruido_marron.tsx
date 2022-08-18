@@ -16,46 +16,44 @@ const Dashboard: NextPage = () => {
   return (
     <Layout>
       <>
+        <br />
         <div className="bg-violet-300">
-          <br />
           <h1 className="text-4xl font-bold text-white">Ruido de Color</h1>{" "}
           <br />
-          <h1 className="text-2xl font-bold text-white">Musica</h1>
+          <h1 className="text-2xl font-bold text-white">Música</h1>
           <br />
           <h1 className="text-2xl font-bold text-white">Ruido Browniano</h1>
           <br />
-          <div className="bg-violet-300">
+          <div className="flex-wrap bg-violet-300">
             <br />
             {/* div de ruido browniano */}
-            <div className="flex justify-center">
-              <div className="items-center object-fill w-4/6 bg-white shadow-lg rounded-2xl">
+            <div className="flex flex-col items-center justify-center">
+              <div className="items-center object-fill bg-white rounded-lg shadow-lg sm:w-4/6">
                 <br />
-                <a className="justify-center" href="#!">
-                  <img
-                    className="justify-center mx-auto rounded-2xl rounded-w-lg"
-                    src="https://i.ibb.co/zFGy9sG/3.png"
-                    width="300px"
-                    height="300px"
-                    alt=""
-                  />
-                </a>
+                <img
+                  className="ml-auto mr-auto rounded-2xl rounded-w-lg"
+                  src="https://i.ibb.co/zFGy9sG/3.png"
+                  width="400px"
+                  height="300px"
+                  alt=""
+                />
                 <div className="p-6">
                   <h5 className="mb-2 text-2xl font-medium text-gray-900">
                     ¿Qué es el ruido marrón?
                   </h5>
-                  <p className="mb-3 text-base text-gray-700 indent-5">
+                  <p className="mb-5 ml-5 text-base text-gray-700 indent-10">
                     El ruido marrón tiene una energía aún mayor en frecuencias
                     más bajas, lo que da como resultado sonidos más profundos y
                     fuertes, como fuertes cascadas, rugidos bajos y truenos
                     suaves.
                   </p>
-                  <p className="mb-3 text-base text-gray-700 indent-5">
+                  <p className="mb-5 ml-5 text-base text-gray-700 indent-10">
                     "Al igual que el ruido rosa, el ruido marrón contiene
                     sonidos de cada octava del espectro sonoro, pero la potencia
                     detrás de las frecuencias disminuye con cada octava",
                     explica Sleep Foundation en su sitio web.
                   </p>
-                  <p className="mb-3 text-base text-gray-700 indent-5">
+                  <p className="mb-5 ml-5 text-base text-gray-700 indent-10">
                     "Esta disminución es el doble que la del ruido rosa, lo que
                     da como resultado un sonido que la gente percibe como más
                     profundo que el ruido blanco o el rosa"..
@@ -63,7 +61,7 @@ const Dashboard: NextPage = () => {
                   <h5 className="mb-2 text-2xl font-medium text-gray-900">
                     ¿Cuál es la diferencia entre el ruido marrón y el blanco?
                   </h5>
-                  <p className="mb-3 text-base text-gray-700 indent-5">
+                  <p className="mb-5 ml-5 text-base text-gray-700 indent-10">
                     En contraste con el ruido blanco, que contiene todas las
                     frecuencias de sonido, el ruido marrón se define por su tono
                     más bajo y graves añadidos. Algunos lo describen como una
@@ -72,7 +70,7 @@ const Dashboard: NextPage = () => {
                     particularmente relajante, el ruido marrón podría ser una
                     alternativa más atractiva.
                   </p>
-                  <p className="mb-3 text-base text-gray-700 indent-5">
+                  <p className="mb-5 ml-5 text-base text-gray-700 indent-10">
                     Algunas investigaciones científicas específicas del ruido
                     marrón aún se encuentran en las etapas preliminares, pero no
                     faltan testimonios en Internet de personas que afirman que
@@ -94,11 +92,9 @@ const Dashboard: NextPage = () => {
                     />
                     <br />
                   </div>
-                  <div className="relative w-full justify-center embed-responsive embed-responsive-21by9 top-padding:42.857143%">
+                  <div className="flex relative w-full justify-center embed-responsive embed-responsive-21by9 top-padding:42.857143%">
                     <iframe
-                      width="275px"
-                      height="275px"
-                      className="justify-center mx-auto rounded-2xl rounded-w-lg"
+                      className="justify-center fill rounded-2xl rounded-w-lg"
                       src="https://www.youtube.com/embed/J84Dq4dIHUQ"
                       title="8 horas de ruido marrón para relajarte"
                       frameBorder="0"
@@ -109,9 +105,11 @@ const Dashboard: NextPage = () => {
                 </div>
               </div>
             </div>
-            <br />
           </div>
         </div>
+        <br />
+        <br />
+        <br />
       </>
     </Layout>
   );

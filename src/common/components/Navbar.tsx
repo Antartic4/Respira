@@ -19,27 +19,18 @@ const Navbar = () => {
           <div className="flex justify-between">
             <div className="flex">
               {/* <!-- logo --> */}
-              <div>
+              <div className="pl-2">
                 <a
-                  href="#"
+                  href="/dashboard"
                   className="flex items-center px-2 py-5 text-gray-700"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-8 h-8"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      className="font-bold text-white"
-                      strokeLinejoin="round"
-                      d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
-                    />
-                  </svg>
-                  <span className="font-bold text-white">Respira</span>
+                  <img
+                    height="40px"
+                    width="40px"
+                    src="https://i.ibb.co/d4wbv3j/iguess-1.png"
+                    alt=""
+                  />
+                  <span className="pl-4 font-bold text-white">Respira</span>
                 </a>
               </div>
               {/* <!-- primary nav --> */}
@@ -56,21 +47,27 @@ const Navbar = () => {
                 >
                   Actividades
                 </a>
+                <a
+                  href="/dashboard/news"
+                  className="px-5 py-2 text-white hover:text-gray-900"
+                >
+                  Noticias
+                </a>
+                <a
+                  href="/dashboard/aboutus"
+                  className="px-5 py-2 text-white hover:text-gray-900"
+                >
+                  Nosotros
+                </a>
               </div>
             </div>
             {/* <!-- secondary nav --> */}
-            <div className="items-center hidden space-x-1 md:flex">
+            <div className="items-center hidden px-4 space-x-1 md:flex">
               <a
                 href="/dashboard"
-                className="px-3 py-5 text-white hover:text-gray-900"
+                className="px-3 py-2 font-bold text-yellow-900 transition duration-300 bg-yellow-400 rounded hover:bg-yellow-300 hover:text-yellow-800"
               >
-                Login
-              </a>
-              <a
-                href="/sign-up"
-                className="px-3 py-2 text-yellow-900 transition duration-300 bg-yellow-400 rounded hover:bg-yellow-300 hover:text-yellow-800"
-              >
-                Registrarse
+                Inicio
               </a>
             </div>
             {/* <!--       mobile button does here --> */}

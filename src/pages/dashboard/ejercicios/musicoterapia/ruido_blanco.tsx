@@ -15,33 +15,32 @@ const Dashboard: NextPage = () => {
 
   return (
     <Layout>
+      <br />
       <div className="bg-violet-300">
-        <br />
         <h1 className="text-4xl font-bold text-white">Ruido de Color</h1> <br />
-        <h1 className="text-3xl font-bold text-white">Musica</h1>
+        <br />
+        <h1 className="text-3xl font-bold text-white">Música</h1>
         <br />
         <h1 className="text-2xl font-bold text-white">Ruido Blanco</h1>
         <br />
-        <div className="bg-violet-300">
+        <div className="flex-wrap bg-violet-300">
           <br />
           {/* div de ruido blanco */}
-          <div className="flex justify-center">
-            <div className="items-center object-fill w-4/6 bg-white shadow-lg rounded-2xl">
+          <div className="flex flex-col items-center justify-center">
+            <div className="items-center object-fill bg-white rounded-lg shadow-lg sm:w-4/6">
               <br />
-              <a className="justify-center" href="#!">
-                <img
-                  className="justify-center mx-auto rounded-2xl rounded-w-lg"
-                  src="https://i.ibb.co/3rs4PDJ/4.png"
-                  width="300px"
-                  height="300px"
-                  alt=""
-                />
-              </a>
+              <img
+                className="ml-auto mr-auto rounded-2xl rounded-w-lg"
+                src="https://i.ibb.co/3rs4PDJ/4.png"
+                width="400px"
+                height="300px"
+                alt=""
+              />
               <div className="p-6">
                 <h5 className="mb-2 text-2xl font-medium text-gray-900">
                   Ruido Blanco Natural
                 </h5>
-                <p className="mb-3 text-base text-gray-700 indent-5">
+                <p className="mb-5 ml-5 text-base text-gray-700 indent-10">
                   ¿Le resulta fácil dormir una siesta en la playa o se le antoja
                   una siesta por la tarde en los días lluviosos? Los sonidos
                   relajantes de las olas del mar o las gotas de lluvia que caen
@@ -51,21 +50,21 @@ const Dashboard: NextPage = () => {
                 <details>
                   <summary>Leer mas?</summary>
                   <span>
-                    <p className="mb-3 text-base text-gray-700 indent-5">
+                    <p className="mb-5 ml-5 text-base text-gray-700 indent-10">
                       Los sonidos continuos de la naturaleza, como las cascadas,
                       la lluvia y la repetición de las olas del mar que rompen
                       suavemente, a menudo cumplen con los criterios de
                       frecuencia del ruido blanco y pueden clasificarse como
                       ruido blanco natural.
                     </p>
-                    <p className="mb-3 text-base text-gray-700 indent-5">
+                    <p className="mb-5 ml-5 text-base text-gray-700 indent-10">
                       Este tipo de sonido puede ayudar con la ansiedad al
                       enmascarar los sonidos irritantes y también al estimular
                       las ondas cerebrales alfa, que se han relacionado con
                       estados mentales más relajados y la reducción de la
                       ansiedad.
                     </p>
-                    <p className="mb-3 text-base text-gray-700 indent-5">
+                    <p className="mb-5 ml-5 text-base text-gray-700 indent-10">
                       Un ensayo clínico encontró que escuchar terapia de sonido
                       basada en la naturaleza (incluidos los sonidos de cascadas
                       y lluvia) redujo significativamente los niveles de
@@ -77,13 +76,13 @@ const Dashboard: NextPage = () => {
                       día durante cuatro semanas redujo los comportamientos
                       agitados de los pacientes con demencia.
                     </p>
-                    <p className="mb-3 text-base text-gray-700 indent-5">
+                    <p className="mb-5 ml-5 text-base text-gray-700 indent-10">
                       Algunas personas tienen una menor tolerancia al ruido y
                       pueden experimentar intensas respuestas emocionales
                       negativas a determinados sonidos. Pero buscar el silencio
                       en realidad puede empeorar este problema.
                     </p>
-                    <p className="mb-3 text-base text-gray-700 indent-5">
+                    <p className="mb-5 ml-5 text-base text-gray-700 indent-10">
                       En cambio, la terapia de enriquecimiento de sonido a
                       menudo se recomienda para personas con tolerancia reducida
                       al sonido o que sufren tinnitus (zumbido en los oídos).
@@ -101,7 +100,7 @@ const Dashboard: NextPage = () => {
                 <h5 className="mb-2 text-2xl font-medium text-gray-900">
                   Ruido Blanco y Sueño
                 </h5>
-                <p className="mb-3 text-base text-gray-700 indent-5">
+                <p className="mb-5 ml-5 text-base text-gray-700 indent-10">
                   El ruido blanco hace que sea más difícil para nuestro cerebro
                   distinguir entre el ruido de fondo y los golpes repentinos en
                   la noche que pueden sacarnos de nuestro sueño. El ruido blanco
@@ -113,13 +112,13 @@ const Dashboard: NextPage = () => {
                 <details>
                   <summary>Leer mas?</summary>
                   <span>
-                    <p className="mb-3 text-base text-gray-700 indent-5">
+                    <p className="mb-5 ml-5 text-base text-gray-700 indent-10">
                       Muchos sonidos naturales caen en la frecuencia de lo que
                       se llama ruido rosa, un sonido ligeramente más suave que
                       el ruido blanco, que muchas personas consideran que es más
                       agradable para los oídos.
                     </p>
-                    <p className="mb-3 text-base text-gray-700 indent-5">
+                    <p className="mb-5 ml-5 text-base text-gray-700 indent-10">
                       Sin embargo, estar expuesto al ruido blanco a largo plazo
                       podría no ser una buena idea para la función cerebral,
                       debido a la tendencia del cerebro a adaptarse a lo que
@@ -133,7 +132,7 @@ const Dashboard: NextPage = () => {
                       ruido blanco aleatorio, influye en el cerebro en una
                       dirección desadaptativa."
                     </p>
-                    <p className="mb-3 text-base text-gray-700 indent-5">
+                    <p className="mb-5 ml-5 text-base text-gray-700 indent-10">
                       El problema, cuenta el doctor, es que la exposición al
                       ruido blanco puede decirle a nuestras células que
                       respondan a casi cualquier cosa, lo que puede alterar
@@ -157,11 +156,9 @@ const Dashboard: NextPage = () => {
                   />
                   <br />
                 </div>
-                <div className="relative w-full justify-center embed-responsive embed-responsive-21by9 top-padding:42.857143%">
+                <div className="flex relative w-full justify-center embed-responsive embed-responsive-21by9 top-padding:42.857143%">
                   <iframe
-                    width="275px"
-                    height="275px"
-                    className="justify-center mx-auto rounded-2xl rounded-w-lg"
+                    className="justify-center fill rounded-2xl rounded-w-lg"
                     src="https://www.youtube.com/embed/nMfPqeZjc2c"
                     title="White Noise Black Screen | Sleep, Study, Focus | 10 Hours"
                     frameBorder="0"
@@ -172,9 +169,9 @@ const Dashboard: NextPage = () => {
               </div>
             </div>
           </div>
-          <br />
-          <br />
         </div>
+        <br />
+        <br />
       </div>
     </Layout>
   );

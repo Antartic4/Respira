@@ -3,25 +3,11 @@ import type {
   InferGetServerSidePropsType,
   NextPage,
 } from "next";
-import Head from "next/head";
-import { json } from "stream/consumers";
-import { Article, GetArticleResults } from "../../../types";
+import { Article } from "../../../types";
 import Layout from "../../common/components/Layout";
 import { useEffect, useState } from "react";
 import ArticleCollection from "../../common/components/ArticleCollection";
-
-// export const getStaticProps: GetStaticProps = async (context) => {
-//   const res = await fetch(
-//     "https://newsapi.org/v2/everything?q=ansiedad&apiKey=952e3baa215a4c6aa0d3e3dcb8f843c0"
-//   );
-//   const results: GetArticleResults = await res.json();
-//   console.log(results);
-//   return {
-//     props: {
-//       articles: results,
-//     },
-//   };
-// };
+import Head from "next/head";
 
 export interface Articulos {
   status: string;
@@ -34,7 +20,7 @@ const Home: NextPage = () => {
   useEffect(() => {
     const getArticles = async () => {
       const res = await fetch(
-        "https://newsapi.org/v2/everything?q='ansiedad'&language=es&apiKey=952e3baa215a4c6aa0d3e3dcb8f843c0"
+        "https://newsapi.org/v2/everything?q='ansiedad'&excludeDomains=elmundo.es&searchIn=title,description&language=es&apiKey=952e3baa215a4c6aa0d3e3dcb8f843c0"
       );
       const results = await res.json();
       setArticles(results?.articles);
@@ -42,17 +28,20 @@ const Home: NextPage = () => {
     getArticles();
   }, []);
   return (
-    <>
-      <Layout>
-        <div>
+    <Layout>
+      <Head>
+        <title>Respira App - Noticias</title>
+      </Head>
+      <div className="flex flex-col min-h-screen text-center">
+        <div className="flex-grow p-6 from-violet-300 to-violet-400 bg-gradient-to-l">
           <div>
             {articles?.map((article: Article, index) => (
               <ArticleCollection key={index} {...article} />
             ))}
           </div>
         </div>
-      </Layout>
-    </>
+      </div>
+    </Layout>
   );
 };
 

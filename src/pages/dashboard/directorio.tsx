@@ -17,74 +17,7 @@ const Dashboard: NextPage = () => {
   return (
     <Layout>
       <>
-        <br />
-        <div className="flex justify-evenly">
-          <div>1</div>
-          <div>|</div>
-          <div>2</div>
-        </div>
-        <br />
-        <div className="flex justify-evenly">
-          <div>1</div>
-          <div>|</div>
-          <div>2</div>
-          <div>|</div>
-          <div>3</div>
-          <div>|</div>
-          <div>4</div>
-        </div>
-        <br />
-        <div className="flex justify-evenly">
-          <div>1</div>
-          <div>|</div>
-          <div>2</div>
-          <div>|</div>
-          <div>3</div>
-          <div>|</div>
-          <div>4</div>
-          <div>|</div>
-          <div>5</div>
-          <div>|</div>
-          <div>6</div>
-          <div>|</div>
-          <div>7</div>
-          <div>|</div>
-          <div>8</div>
-        </div>
-        <br />
-        <div className="flex justify-evenly">
-          <div>1</div>
-          <div>|</div>
-          <div>2</div>
-          <div>|</div>
-          <div>3</div>
-          <div>|</div>
-          <div>4</div>
-          <div>|</div>
-          <div>5</div>
-          <div>|</div>
-          <div>6</div>
-          <div>|</div>
-          <div>7</div>
-          <div>|</div>
-          <div>8</div>
-          <div>|</div>
-          <div>9</div>
-          <div>|</div>
-          <div>10</div>
-          <div>|</div>
-          <div>11</div>
-          <div>|</div>
-          <div>12</div>
-          <div>|</div>
-          <div>13</div>
-          <div>|</div>
-          <div>14</div>
-          <div>|</div>
-          <div>15</div>
-          <div>|</div>
-          <div>16</div>
-        </div>
+        <h1 className="text-xl">Directorio de los Servicios de Salud Mental</h1>
       </>
     </Layout>
   );
