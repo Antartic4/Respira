@@ -307,39 +307,12 @@ const Dashboard: NextPage = () => {
         </div>
         <div className="w-1/6"></div>
       </div>
-
-      <div className="min-h-screen hero">
-        <div className="hero-content">
-          <div className="text-center">
-            <Link href="/dashboard/ejercicios">
-              <button className="btn btn-secondary">Ejercicios</button>
-            </Link>
-          </div>
-          <div className="max-w-lg">
-            <h1 className="text-5xl font-bold leading-snug text-center text-black">
-              You are logged in!
-            </h1>
-            <h1>Bienvenidos {data?.user?.email}</h1>
-            <p className="my-4 leading-loose text-center">
-              You are allowed to visit this page because you have a session,
-              otherwise you would be redirected to the login page.
-            </p>
-            <div className="p-4 my-4 bg-white rounded-lg">
-              <pre>
-                <code>{JSON.stringify(data, null, 2)}</code>
-              </pre>
-            </div>
-            <div className="text-center">
-              <button
-                className="btn btn-secondary"
-                onClick={() => signOut({ callbackUrl: "/" })}
-              >
-                Logout
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <button
+        className="btn btn-secondary"
+        onClick={() => signOut({ callbackUrl: "/" })}
+      >
+        Logout
+      </button>
     </Layout>
   );
 };
