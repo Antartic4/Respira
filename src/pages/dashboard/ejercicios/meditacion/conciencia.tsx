@@ -73,7 +73,7 @@ const Dashboard: NextPage = () => {
                   atención plena reducen la ansiedad y la depresión. También hay
                   evidencia de que la atención plena puede reducir la presión
                   arterial y mejorar el sueño. Incluso puede ayudar a las
-                  personas a sobrellevar el dolor
+                  personas a sobrellevar el dolor.
                 </p>
                 <p className="mb-5 ml-5 text-base text-gray-700 indent-10">
                   La mayoría de las personas descubren que la mente tarda al
