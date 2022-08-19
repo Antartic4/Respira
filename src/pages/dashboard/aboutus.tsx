@@ -3,6 +3,7 @@ import { useSession, signOut } from "next-auth/react";
 import Link from "next/link";
 import { stringify } from "querystring";
 import Layout from "../../common/components/Layout";
+import Image from "next/image";
 
 import { requireAuth } from "../../common/requireAuth";
 
@@ -40,12 +41,13 @@ const Dashboard: NextPage = () => {
                           sensación de felicidad.
                         </p>
                       </div>
-                      <img
+                      <Image
                         className="ml-auto mr-auto rounded-2xl rounded-w-lg"
                         src="https://i.ibb.co/k2XZjKY/Whats-App-Image-2022-08-17-at-3-17-23-AM.jpg"
+                        alt="Picture of the author"
                         width="400px"
                         height="300px"
-                        alt=""
+                        layout="responsive"
                       />
                     </div>
                     <div className="px-8 py-12 bg-white shadow-xl rounded-2xl sm:px-12 lg:px-8">
@@ -62,7 +64,7 @@ const Dashboard: NextPage = () => {
                           salud mental.
                         </p>
                       </div>
-                      <img
+                      <Image
                         className="ml-auto mr-auto rounded-2xl rounded-w-lg"
                         src="https://i.ibb.co/ZM36mVF/Whats-App-Image-2022-08-17-at-3-17-23-AM-1.jpg"
                         width="400px"
@@ -86,7 +88,7 @@ const Dashboard: NextPage = () => {
                           en una situación de ‘ganar-ganar’.
                         </p>
                       </div>
-                      <img
+                      <Image
                         className="ml-auto mr-auto rounded-2xl rounded-w-lg"
                         src="https://i.ibb.co/r25g5XX/Whats-App-Image-2022-08-17-at-3-17-23-AM-2.jpg"
                         width="400px"

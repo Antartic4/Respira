@@ -3,6 +3,8 @@ import { useSession, signOut } from "next-auth/react";
 import Link from "next/link";
 import { stringify } from "querystring";
 import Layout from "../../../../common/components/Layout";
+import imagen from "../../../../common/pics/conciencia.jpg";
+import Image from "next/image";
 
 import { requireAuth } from "../../../../common/requireAuth";
 
@@ -27,7 +29,7 @@ const Dashboard: NextPage = () => {
           <div className="flex flex-col items-center justify-center">
             <div className="items-center object-fill bg-white rounded-lg shadow-lg sm:w-4/6">
               <br />
-              <img
+              <Image
                 className="ml-auto mr-auto rounded-2xl rounded-w-lg"
                 src="https://i.pinimg.com/originals/9a/50/6f/9a506fd9ff749ce3c477e26a9247f751.jpg"
                 width="400px"
@@ -81,7 +83,6 @@ const Dashboard: NextPage = () => {
                   descritas aquí por períodos más cortos y aun así obtener un
                   beneficio.
                 </p>
-                <br />
                 <div className="flex relative w-full justify-center embed-responsive embed-responsive-21by9 top-padding:42.857143%">
                   <iframe
                     className="justify-center fill rounded-2xl rounded-w-lg"
@@ -96,8 +97,6 @@ const Dashboard: NextPage = () => {
             </div>
           </div>
         </div>
-        <br />
-        <br />
       </div>
     </Layout>
   );

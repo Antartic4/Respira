@@ -1,10 +1,14 @@
 import type { NextPage } from "next";
 import { useSession, signOut } from "next-auth/react";
 import Link from "next/link";
+import Image from "next/image";
 import { stringify } from "querystring";
 import Layout from "../../../../common/components/Layout";
 
 import { requireAuth } from "../../../../common/requireAuth";
+
+import cielorosado from "../../../../common/pics/cielorosa.png";
+import rosa from "../../../../common/pics/rosa.jpg";
 
 export const getServerSideProps = requireAuth(async (ctx) => {
   return { props: {} };
@@ -28,14 +32,14 @@ const Dashboard: NextPage = () => {
             <br />
             {/* div de ruido rosa */}
             <div className="flex flex-col items-center justify-center">
-              <div className="items-center object-fill bg-white rounded-lg shadow-lg sm:w-4/6">
+              <div className="items-center text-center object-fill bg-white rounded-lg shadow-lg sm:w-4/6">
                 <br />
-                <img
+                <Image
                   className="ml-auto mr-auto rounded-2xl rounded-w-lg"
-                  src="https://i.ibb.co/3BPXGKV/2.png"
-                  width="400px"
-                  height="300px"
-                  alt=""
+                  src={cielorosado}
+                  alt="Cielo Rosado"
+                  width={400}
+                  height={300}
                 />
                 <div className="p-6">
                   <h5 className="mb-2 text-2xl font-medium text-gray-900">
@@ -105,10 +109,10 @@ const Dashboard: NextPage = () => {
                   </a>
                   <div className="justify-center mx-auto rounded-2xl rounded-w-lg">
                     <br />
-                    <img
+                    <Image
                       className="justify-center mx-auto rounded-2xl rounded-w-lg"
-                      src="https://i.ibb.co/BCm6Pr0/rosa.jpg"
-                      alt=""
+                      src={rosa}
+                      alt="Info-Rosa"
                     />
                     <br />
                   </div>

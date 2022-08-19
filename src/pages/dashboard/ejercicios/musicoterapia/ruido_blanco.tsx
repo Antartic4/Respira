@@ -4,6 +4,10 @@ import Link from "next/link";
 import { stringify } from "querystring";
 import Layout from "../../../../common/components/Layout";
 
+import imagen1 from "../../../../common/pics/ruidoblanco.png";
+import imagen2 from "../../../../common/pics/blanco.jpg";
+import Image from "next/image";
+
 import { requireAuth } from "../../../../common/requireAuth";
 
 export const getServerSideProps = requireAuth(async (ctx) => {
@@ -29,13 +33,14 @@ const Dashboard: NextPage = () => {
           <div className="flex flex-col items-center justify-center">
             <div className="items-center object-fill bg-white rounded-lg shadow-lg sm:w-4/6">
               <br />
-              <img
-                className="ml-auto mr-auto rounded-2xl rounded-w-lg"
-                src="https://i.ibb.co/3rs4PDJ/4.png"
-                width="400px"
-                height="300px"
-                alt=""
-              />
+              <div className="text-center">
+                <Image
+                  className="ml-auto mr-auto rounded-2xl rounded-w-lg"
+                  src={imagen1}
+                  width={400}
+                  height={300}
+                />
+              </div>
               <div className="p-6">
                 <h5 className="mb-2 text-2xl font-medium text-gray-900">
                   Ruido Blanco Natural
@@ -141,19 +146,18 @@ const Dashboard: NextPage = () => {
                   </span>
                 </details>
                 <br />
-                <a
-                  href="https://www.spiritualityhealth.com/articles/2021/04/20/benefits-of-white-noise-for-anxiety-and-sleep"
-                  className="text-blue-600 underline"
-                >
-                  Fuente!
-                </a>
+                <Link href="https://www.spiritualityhealth.com/articles/2021/04/20/benefits-of-white-noise-for-anxiety-and-sleep">
+                  <a className="text-blue-600 underline">Fuente!</a>
+                </Link>
                 <div className="justify-center mx-auto rounded-2xl rounded-w-lg">
                   <br />
-                  <img
-                    className="justify-center mx-auto rounded-2xl rounded-w-lg"
-                    src="https://i.ibb.co/DwwYmWm/blanco.jpg"
-                    alt=""
-                  />
+                  <div className="text-center">
+                    <Image
+                      className="justify-center mx-auto rounded-2xl rounded-w-lg"
+                      src={imagen2}
+                      alt=""
+                    />
+                  </div>
                   <br />
                 </div>
                 <div className="flex relative w-full justify-center embed-responsive embed-responsive-21by9 top-padding:42.857143%">

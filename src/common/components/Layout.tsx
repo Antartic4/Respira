@@ -1,12 +1,10 @@
 import React, { Fragment } from "react";
 import Navbar from "./Navbar";
-import { useSession, signOut } from "next-auth/react";
 
-const Layout = ({ children }) => {
+const Layout = ({ children }: any) => {
   return (
     <Fragment>
       <Navbar />
-
       {children}
     </Fragment>
   );

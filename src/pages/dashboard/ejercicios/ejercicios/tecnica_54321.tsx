@@ -3,6 +3,8 @@ import { useSession, signOut } from "next-auth/react";
 import Link from "next/link";
 import { stringify } from "querystring";
 import Layout from "../../../../common/components/Layout";
+import pic from "../../../../common/pics/metodo54.jpg";
+import Image from "next/image";
 
 import { requireAuth } from "../../../../common/requireAuth";
 
@@ -25,13 +27,15 @@ const Dashboard: NextPage = () => {
             <div className="flex flex-col items-center justify-center">
               <div className="items-center object-fill bg-white rounded-lg shadow-lg sm:w-4/6">
                 <br />
-                <img
-                  className="ml-auto mr-auto rounded-2xl rounded-w-lg"
-                  src="https://i.pinimg.com/originals/87/64/bc/8764bc4027ca56a89247ec5602431db3.jpg"
-                  width="400px"
-                  height="300px"
-                  alt=""
-                />
+                <div className="text-center">
+                  <Image
+                    className="ml-auto mr-auto rounded-2xl rounded-w-lg"
+                    src={pic}
+                    width="400px"
+                    height="300px"
+                    alt=""
+                  />
+                </div>
                 <div className="p-6">
                   <h5 className="mb-2 text-2xl font-medium text-gray-900">
                     ¿Cómo ayuda el Método 54321 con la Ansiedad?
@@ -86,13 +90,9 @@ const Dashboard: NextPage = () => {
                     siempre prestas atención, como el color de las motas en la
                     alfombra o el zumbido de tu computadora.
                   </p>
-
-                  <a
-                    href="https://www.hope-therapy-center.com/single-post/2016/04/06/54321-method-to-reduce-anxiety"
-                    className="text-blue-600 underline"
-                  >
-                    Fuente!
-                  </a>
+                  <Link href="https://www.hope-therapy-center.com/single-post/2016/04/06/54321-method-to-reduce-anxiety">
+                    <a className="text-blue-600 underline">Fuente!</a>
+                  </Link>
                   <br />
                 </div>
               </div>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Article } from "../../../types";
+import Image from "next/image";
 
 const ArticleCollection = ({
   urlToImage,
@@ -36,9 +37,6 @@ const ArticleCollection = ({
               </Link>
               <br />
               <br />
-            </div>
-            <div>
-              <p className="mb-1 opacity-90">Publicado el : {publishedAt}</p>
             </div>
           </div>
         </div>

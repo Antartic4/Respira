@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useSession, signOut } from "next-auth/react";
 import type { NextPage } from "next";
 import { requireAuth } from "../../common/requireAuth";
+import Image from "next/image";
 
 const Navbar = () => {
   const { data } = useSession();
@@ -28,12 +29,16 @@ const Navbar = () => {
                   href="/dashboard"
                   className="flex items-center px-2 py-5 text-gray-700"
                 >
-                  <img
-                    height="40px"
-                    width="40px"
-                    src="https://i.ibb.co/d4wbv3j/iguess-1.png"
-                    alt=""
-                  />
+                  <picture>
+                    <source
+                      srcSet="https://i.ibb.co/d4wbv3j/iguess-1.png"
+                      type="image/webp"
+                    />
+                    <img
+                      src="https://i.ibb.co/d4wbv3j/iguess-1.png"
+                      alt="Landscape picture"
+                    />
+                  </picture>
                   <span className="pl-4 font-bold text-white">Respira</span>
                 </a>
               </div>

@@ -1,6 +1,8 @@
 import type { NextPage } from "next";
 import { useSession, signOut } from "next-auth/react";
 import Link from "next/link";
+import Image from "next/image";
+import imagen1 from "../../../../common/pics/conciencia.jpg";
 import { stringify } from "querystring";
 import Layout from "../../../../common/components/Layout";
 
@@ -25,13 +27,15 @@ const Dashboard: NextPage = () => {
           <div className="flex flex-col items-center justify-center">
             <div className="items-center object-fill bg-white rounded-lg shadow-lg sm:w-4/6">
               <br />
-              <img
-                className="ml-auto mr-auto rounded-2xl rounded-w-lg"
-                src="https://i.pinimg.com/originals/9a/50/6f/9a506fd9ff749ce3c477e26a9247f751.jpg"
-                width="400px"
-                height="300px"
-                alt=""
-              />
+              <div className="text-center">
+                <Image
+                  className="ml-auto mr-auto rounded-2xl rounded-w-lg"
+                  src={imagen1}
+                  width="400px"
+                  height="300px"
+                  alt=""
+                />
+              </div>
               <div className="p-6">
                 <h5 className="mb-2 text-2xl font-medium text-gray-900">
                   Meditación de Escaneo Corporal

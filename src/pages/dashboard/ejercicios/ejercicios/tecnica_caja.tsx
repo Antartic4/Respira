@@ -3,6 +3,9 @@ import { useSession, signOut } from "next-auth/react";
 import Link from "next/link";
 import { stringify } from "querystring";
 import Layout from "../../../../common/components/Layout";
+import Image from "next/image";
+
+import imagen from "../../../../common/pics/tc1.png";
 
 import { requireAuth } from "../../../../common/requireAuth";
 
@@ -25,13 +28,15 @@ const Dashboard: NextPage = () => {
             <div className="flex flex-col items-center justify-center">
               <div className="items-center object-fill bg-white rounded-lg shadow-lg sm:w-4/6">
                 <br />
-                <img
-                  className="ml-auto mr-auto rounded-2xl rounded-w-lg"
-                  src="https://i.ibb.co/MSkVKd6/Loading-amico.png"
-                  width="400px"
-                  height="300px"
-                  alt=""
-                />
+                <div className="text-center">
+                  <Image
+                    className="ml-auto mr-auto rounded-2xl rounded-w-lg"
+                    src="https://i.ibb.co/MSkVKd6/Loading-amico.png"
+                    width="400px"
+                    height="300px"
+                    alt=""
+                  />
+                </div>
                 <div className="p-6">
                   <h5 className="mb-2 text-2xl font-medium text-gray-900">
                     Cómo funciona la respiración de caja
@@ -105,11 +110,13 @@ const Dashboard: NextPage = () => {
                     Fuente!
                   </a>
                   <br />
-                  <a href="/dashboard/ejercicios/ejercicios/tecnica_caja/ejercicio_caja">
-                    <div className="w-1/2 mx-auto mb-10 text-2xl text-center text-white rounded-xl bg-violet-600">
-                      Click para ejercicio
-                    </div>
-                  </a>
+                  <Link href="/dashboard/ejercicios/ejercicios/tecnica_caja/ejercicio_caja">
+                    <a>
+                      <div className="w-1/2 mx-auto mb-10 text-2xl text-center text-white rounded-xl bg-violet-600">
+                        Click para ejercicio
+                      </div>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>

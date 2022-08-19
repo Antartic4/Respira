@@ -1,8 +1,10 @@
 import type { NextPage } from "next";
 import { useSession, signOut } from "next-auth/react";
+import Image from "next/image";
 import Link from "next/link";
 import { stringify } from "querystring";
 import Layout from "../../../../common/components/Layout";
+import tecpom from "../../../../common/pics/tecnicapomodoro.png";
 
 import { requireAuth } from "../../../../common/requireAuth";
 
@@ -24,13 +26,15 @@ const Dashboard: NextPage = () => {
           <div className="flex flex-col items-center justify-center">
             <div className="items-center object-fill bg-white rounded-lg shadow-lg sm:w-4/6">
               <br />
-              <img
-                className="ml-auto mr-auto rounded-2xl rounded-w-lg"
-                src="https://i.ibb.co/wdXqhgW/Work-time-pana-1.png"
-                width="400px"
-                height="300px"
-                alt=""
-              />
+              <div className="text-center">
+                <Image
+                  className="ml-auto mr-auto rounded-2xl rounded-w-lg"
+                  src={tecpom}
+                  width="400px"
+                  height="300px"
+                  alt=""
+                />
+              </div>
               <div className="p-6">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   Técnica Pomodoro
@@ -91,11 +95,13 @@ const Dashboard: NextPage = () => {
                 </a>
                 <br />
                 <br />
-                <a href="/dashboard/ejercicios/ejercicios/tecnica_pomodoro/herramienta_pomodoro">
-                  <div className="w-1/2 mx-auto mb-10 text-2xl text-center text-white rounded-xl bg-violet-600">
-                    Click para ejercicio
-                  </div>
-                </a>
+                <Link href="/dashboard/ejercicios/ejercicios/tecnica_pomodoro/herramienta_pomodoro">
+                  <a>
+                    <div className="w-1/2 mx-auto mb-10 text-2xl text-center text-white rounded-xl bg-violet-600">
+                      Click para ejercicio
+                    </div>
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
